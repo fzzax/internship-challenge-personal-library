@@ -63,7 +63,7 @@ The app will be available at: http://localhost:3000/
 
 Here’s a quick look at the UI:
 
-![Personal Library App Screenshot](../interns-challenge/frontend/public/page.jpg)
+![Personal Library App Screenshot](frontend/public/page.jpg)
 
 
 ### 🔑 Key Design Decisions
