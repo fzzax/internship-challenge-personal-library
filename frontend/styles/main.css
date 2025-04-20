@@ -1,0 +1,215 @@
+/* =============================== GLOBAL =============================== */
+body {
+    font-family: serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* =============================== LAYOUT =============================== */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #f7f9fc;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header h1,
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #1f2937;
+  }
+  
+  .empty-message {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* =============================== BUTTONS =============================== */
+  button,
+  .cancel-btn,
+  .submit-btn,
+  .edit,
+  .delete,
+  .add-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .add-button {
+    display: flex;
+    align-items: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+  }
+  
+  .add-button:hover {
+    background-color: #1e40af;
+  }
+  
+  .edit {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .edit:hover,
+  .submit-btn:hover {
+    background-color: #1e40af;
+  }
+  
+  .delete {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .delete:hover {
+    background-color: #b91c1c;
+  }
+  
+  .cancel-btn {
+    background: #f3f4f6;
+    color: #333;
+  }
+  
+  .submit-btn {
+    background: #2563eb;
+    color: white;
+  }
+  
+  /* =============================== GRID =============================== */
+  .book-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  /* =============================== CARD =============================== */
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card h2 {
+    font-size: 1.25rem;
+    margin: 0 0 0.25rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-details p {
+    font-size: 0.88rem;
+    margin: 0.25rem 0;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .stars {
+    color: #facc15; /* golden-yellow */
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  
+  /* =============================== MODAL / FORM =============================== */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .book-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+  
